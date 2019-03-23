@@ -1,0 +1,296 @@
+.header
+  @media(max-width: 991px)
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 1
+
+  @media(min-width: 992px)
+    height: 236px
+
+  @media(min-width: 1200px)
+    height: 260px
+
+  &.fixed
+    @media(min-width: 992px)
+      padding-bottom: 60px
+
+    .header__middle
+      @media(min-width: 1200px)
+        background-color: transparent
+        height: 0
+        left: 50%
+        min-height: 0
+        position: fixed
+        padding-top: 0
+        padding-bottom: 0
+        top: 0
+        transform: translateX(-50%)
+        width: 1140px
+        z-index: 101
+
+    .header__logo
+      @media(min-width: 1200px)
+        height: 60px
+        left: 0
+        position: absolute
+        top: 0
+        width: 115px
+
+    .header__logo-image-color
+      @media(min-width: 1200px)
+        display: none
+
+    .header__logo-image-white
+      @media(min-width: 1200px)
+        display: block
+        width: 115px
+
+    .header__feature,
+    .header__phone-block
+      @media(min-width: 1200px)
+        display: none
+
+    .header__button-block
+      @media(min-width: 1200px)
+        left: auto
+        position: absolute
+        right: 1px
+        top: 11px
+
+      .button
+        @media(min-width: 1200px)
+          font-size: 10px
+          line-height: 16px
+          min-height: 32px
+          padding: 8px 10px
+
+    .header__bottom
+      @media(min-width: 992px)
+        left: 0
+        position: fixed
+        top: 0
+        width: 100%
+        z-index: 100
+
+    .header__bottom-container
+      @media(min-width: 1200px)
+        padding-left: 150px
+        padding-right: 150px
+
+    .main-menu__list
+      @media(min-width: 992px)
+        font-size: 13px
+
+  &__top
+    background-color: $primary_color
+    min-height: 50px
+
+    @media(max-width: 991px)
+      display: none
+
+  &__top-container
+    align-items: center
+    display: flex
+
+  &__subways
+    display: flex
+
+    @media(max-width: 767px)
+      display: none
+
+  &__search
+    flex-grow: 1
+    margin-left: 30px
+
+  &__middle
+    background-color: $primary-color
+
+    @media(min-width: 992px)
+      background-color: #fff
+      padding-top: 35px
+      padding-bottom: 35px
+
+    @media(min-width: 1200px)
+      min-height: 150px
+
+  &__middle-container
+    align-items: center
+    display: flex
+    position: relative
+
+    @media(max-width: 991px)
+      align-items: stretch
+      min-height: 60px
+      padding-top: 10px
+      padding-bottom: 10px
+
+  &__logo
+    align-items: center
+    display: flex
+    margin-right: auto
+    text-decoration: none
+    width: 110px
+
+    @media(min-width: 992px)
+      width: 250px
+
+    @media(min-width: 1200px)
+      width: 336px
+
+  &__logo-image-color
+    display: none
+
+    @media(min-width: 992px)
+      display: block
+
+  &__logo-image-white
+    @media(min-width: 992px)
+      display: none
+
+  &__feature
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+
+    @media(max-width: 991px)
+      display: none
+
+  &__phone-block
+    margin-right: 45px
+    text-align: center
+
+  &__phone
+    color: #fff
+    font-weight: 700
+    text-decoration: none
+    transition: color 0.3s
+
+    @media(max-width: 991px)
+      align-items: center
+      display: flex
+      height: 100%
+
+    @media(min-width: 992px)
+      color: $text-color
+
+    &:hover,
+    &:focus
+      color: $secondary-color
+
+  &__work-time
+    font-size: 14px
+
+    @media(max-width: 991px)
+      display: none
+
+  &__button-block
+    margin-right: 90px
+
+    @media(max-width: 767px)
+      display: none
+
+    @media(min-width: 992px)
+      margin-left: 25px
+      margin-right: 0
+
+    @media(min-width: 1200px)
+      margin-left: 50px
+
+  &__bottom
+    @media(min-width: 992px)
+      background-color: $primary-color
+      min-height: 60px
+
+  &__bottom-container
+    transition: padding 0.1s
+
+.subway
+  align-items: center
+  color: #fff
+  display: flex
+  min-height: 50px
+  margin-right: 30px
+  text-decoration: none
+
+  @media(min-width: 1200px)
+    font-size: 16px
+
+  &:hover,
+  &:focus
+    .subway__text
+      border-bottom: 1px dotted
+
+  &:last-child
+    margin-right: 0
+
+  &__icon
+    align-items: center
+    background-color: #fff
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    height: 34px
+    margin-right: 10px
+    width: 34px
+
+  &__svg
+    height: 23px
+    margin-top: -2px
+    width: 28px
+
+    &--red
+      fill: #dc0031
+
+    &--purple
+      fill: #761f80
+
+.search
+  align-items: center
+  display: flex
+
+  &:hover
+    .search__input
+      opacity: 1
+
+  &__input
+    background-color: #fff
+    border: none
+    border-radius: 20px
+    font-size: 16px
+    flex-grow: 1
+    height: 40px
+    margin-right: 10px
+    opacity: 0
+    padding: 10px 15px
+    transition: opacity 0.3s
+
+    @media(max-width: 767px)
+      opacity: 1
+
+    &:focus
+      opacity: 1
+
+  &__button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    height: 50px
+    padding: 0
+    width: 50px
+
+    &:hover,
+    &:focus
+      .search__icon
+        fill: $secondary-color
+
+  &__icon
+    fill: #fff
+    height: 30px
+    transition: fill 0.3s
+    width: 30px

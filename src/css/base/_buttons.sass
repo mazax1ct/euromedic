@@ -1,0 +1,33 @@
+.button
+  background-color: $secondary-color
+  border: none
+  border-radius: 16px
+  color: #fff
+  cursor: pointer
+  display: inline-block
+  font-family: inherit
+  font-size: 14px
+  line-height: 18px
+  min-height: 36px
+  padding: 9px 20px
+  text-decoration: none
+  text-align: center
+  transition: background-color 0.3s
+  vertical-align: middle
+
+  &:hover,
+  &:active,
+  &:focus
+    background-color: darken($secondary-color,10%)
+    color: #fff
+
+  &:focus
+    outline: 1px dotted #000
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none
