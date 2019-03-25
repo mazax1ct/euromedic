@@ -1,0 +1,63 @@
+<div id="appointment" class="popup">
+  <p class="popup__title">Записаться на прием</p>
+  <p class="popup__note">Заполняя данную форму, Вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>.</p>
+  <form class="form" action="" method="post">
+    <label class="form__label">
+      <input class="input" type="text" name="user_name" value="" placeholder="Имя">
+    </label>
+    <label class="form__label">
+      <input class="input" type="text" name="user_email" value="" placeholder="Электронная почта">
+    </label>
+    <label class="form__label">
+      <input class="input" type="text" name="user_phone" value="" placeholder="Номер телефона">
+    </label>
+    <label class="form__label">
+      <select class="js-select select" name="clinic_address" data-smart-positioning="false">
+        <option value="0">Комендантский проспект, 17/1</option>
+        <option value="1">Пр. Ветеранов, 16</option>
+        <option value="2">г. Сосновый Бор, ул. Молодежная, 9А МЦ "Панацея"</option>
+      </select>
+    </label>
+    <label class="form__label">
+      <textarea class="textarea" name="user_message" placeholder="Специализация врача или описание симптомов"></textarea>
+    </label>
+    <label class="form__label">
+      <input class="input" type="text" name="appointment_date" value="" placeholder="Желательная дата и время приема">
+    </label>
+    <div class="form__captcha-block">
+      <div class="form__captcha"><img class="form__captcha-img" src="images/raster/content/captcha.jpg" alt="DUDLFVND" title="DUDLFVND"></div>
+      <label class="form__label">
+        <input class="input" type="text" name="captcha" value="" placeholder="Введите капчу">
+      </label>
+    </div>
+    <p class="form__note">Нажимая на кнопку "Отправить", Вы даете Согласие на обработку персональных данных</p>
+    <div class="form__button-block">
+      <button class="form__button button button--primary" type="submit">ОТПРАВИТЬ</button>
+    </div>
+  </form>
+</div>
+
+<div id="head_doctor" class="popup">
+  <p class="popup__title">Связаться с Главным Врачом</p>
+  <p class="popup__note">Заполняя данную форму, Вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>.</p>
+  <form class="form" action="" method="post">
+    <label class="form__label">
+      <input class="input" type="text" name="user_name_" value="" placeholder="Имя">
+    </label>
+    <label class="form__label">
+      <input class="input" type="text" name="user_email_" value="" placeholder="Электронная почта">
+    </label>
+    <label class="form__label">
+      <textarea class="textarea" name="user_message_" placeholder="Ваше сообщение"></textarea>
+    </label>
+    <div class="form__captcha-block">
+      <div class="form__captcha"><img class="form__captcha-img" src="images/raster/content/captcha.jpg" alt="DUDLFVND" title="DUDLFVND"></div>
+      <label class="form__label">
+        <input class="input" type="text" name="captcha_" value="" placeholder="Введите капчу">
+      </label>
+    </div>
+    <div class="form__button-block">
+      <button class="form__button button button--primary" type="submit">ОТПРАВИТЬ</button>
+    </div>
+  </form>
+</div>

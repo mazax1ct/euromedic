@@ -1,0 +1,65 @@
+.search-result
+  @media(min-width: 1200px)
+    padding-left: 16.666667%
+    padding-right: 16.666667%
+
+  &__title
+    font-size: 14px
+    font-weight: 400
+
+    @media(min-width: 768px)
+      padding-left: 0
+
+    @media(min-width: 992px)
+      font-size: 16px
+
+    @media(min-width: 1200px)
+      font-size: 20px
+      margin-bottom: 30px
+
+.search-item
+  margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+  @media(min-width: 992px)
+    position: relative
+    padding-left: 20%
+
+  &__title
+    margin-bottom: 10px
+
+    @media(min-width: 992px)
+      margin-bottom: 20px
+
+  &__title-link
+    color: $text-color
+
+    &:hover
+      color: $secondary-color
+
+    @media(max-width: 1199px)
+      text-decoration: underline
+
+  &__section
+    margin-bottom: 10px
+
+    @media(min-width: 992px)
+      font-size: 16px
+      left: 0
+      position: absolute
+      padding-right: 30px
+      top: 0
+      width: 20%
+
+    @media(min-width: 1200px)
+      padding-top: 4px
+
+  &__section-link
+    @media(max-width: 1199px)
+      text-decoration: underline
+
+    &:hover
+      color: $primary-color
+      text-decoration: underline

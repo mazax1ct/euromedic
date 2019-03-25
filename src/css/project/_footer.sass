@@ -1,13 +1,13 @@
 .footer
+  flex-shrink: 0
+
   @media(min-width: 768px)
     padding-bottom: 45px
 
   &__top
     background-color: #f6f6f6
     padding-top: 30px
-
-    @media(min-width: 768px)
-      padding-bottom: 30px
+    padding-bottom: 30px
 
     @media(min-width: 992px)
       padding-top: 65px
@@ -15,7 +15,12 @@
 
   &__logo
     display: block
+    margin-left: auto
+    margin-right: auto
     margin-bottom: 30px
+
+    @media(max-width: 767px)
+      width: 200px
 
   &__social-block
     @media(max-width: 767px)
@@ -85,6 +90,7 @@
   &__partners-title
     font-size: 20px
     font-weight: 700
+    margin-top: 20px
     margin-bottom: 20px
 
     @media(min-width: 768px)
@@ -125,6 +131,9 @@
     margin-bottom: 20px
 
     @media(min-width: 768px)
+      align-items: center
+      display: flex
+      height: 75px
       margin-bottom: 0
 
   &__terms-block
@@ -163,6 +172,8 @@
     line-height: 11px
 
     @media(max-width: 767px)
+      align-items: center
+      height: 75px
       justify-content: center
 
   &__developer-link
@@ -276,6 +287,9 @@
     @media(min-width: 992px)
       font-size: 14px
 
+    @media(min-width: 1200px)
+      font-size: 16px
+
   &__bottom-phone
     align-items: center
     color: #fff
@@ -373,6 +387,9 @@
   &__link-text
     border-bottom: 1px dotted transparent
     transition: border-color 0.3s
+
+    @media(max-width: 1199px)
+      border-bottom-color: inherit
 
 .social-links
   display: flex

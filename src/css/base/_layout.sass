@@ -3,6 +3,8 @@ html
   height: 100%
 
 body
+  display: flex
+  flex-direction: column
   height: 100%
   min-height: 100%
   min-width: 320px
@@ -11,22 +13,12 @@ body
     overflow-y: hidden
 
 .wrapper
-  @media (max-width: 991px)
-    padding-top: 60px
+  flex: 1 0 auto
+  padding-bottom: 60px
+  padding-top: 90px
 
-  @media (min-width: 768px)
-    min-height: 100%
-    height: auto !important
-    height: 100%
-    margin-bottom: -100px
+  @media(min-width: 768px)
+    padding-bottom: 60px
 
-  &::after
-    @media (min-width: 768px)
-      content: ""
-      display: block
-      height: 100px
-      width: 100%
-
-.page-content
-  padding-top: 50px
-  padding-bottom: 50px
+  @media(min-width: 992px)
+    padding-top: 0

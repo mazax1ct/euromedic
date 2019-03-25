@@ -36,7 +36,7 @@
         left: 0
         position: absolute
         top: 0
-        width: 115px
+        width: 130px
 
     .header__logo-image-color
       @media(min-width: 1200px)
@@ -45,7 +45,8 @@
     .header__logo-image-white
       @media(min-width: 1200px)
         display: block
-        width: 115px
+        transform: translateZ(0)
+        width: 130px
 
     .header__feature,
     .header__phone-block
@@ -55,19 +56,22 @@
     .header__button-block
       @media(min-width: 1200px)
         left: auto
+        margin-left: 0
         position: absolute
         right: 1px
         top: 11px
+        transform: translateZ(0)
 
       .button
         @media(min-width: 1200px)
-          font-size: 10px
-          line-height: 16px
+          font-size: 11px
+          line-height: 17px
           min-height: 32px
-          padding: 8px 10px
+          padding: 8px 15px 7px
 
     .header__bottom
       @media(min-width: 992px)
+        box-shadow: 0 0 6px 3px rgba(0,0,0,0.1)
         left: 0
         position: fixed
         top: 0
@@ -82,6 +86,11 @@
     .main-menu__list
       @media(min-width: 992px)
         font-size: 13px
+
+    .main-menu__link
+      @media(min-width: 992px)
+        padding-left: 15px
+        padding-right: 15px
 
   &__top
     background-color: $primary_color
@@ -203,6 +212,7 @@
     @media(min-width: 992px)
       background-color: $primary-color
       min-height: 60px
+      position: relative
 
   &__bottom-container
     transition: padding 0.1s
@@ -248,30 +258,40 @@
       fill: #761f80
 
 .search
-  align-items: center
   display: flex
+  flex-grow: 1
+  position: relative
 
   &:hover
     .search__input
       opacity: 1
 
+    .search__icon
+      fill: $primary-color
+
   &__input
     background-color: #fff
     border: none
-    border-radius: 20px
+    border-radius: 16px
     font-size: 16px
     flex-grow: 1
     height: 40px
-    margin-right: 10px
+    max-width: 440px
+    margin-left: auto
     opacity: 0
-    padding: 10px 15px
+    padding: 10px 60px 10px 15px
     transition: opacity 0.3s
+    width: 100%
 
     @media(max-width: 767px)
       opacity: 1
 
-    &:focus
+    &:focus,
+    &.focus
       opacity: 1
+
+      & + .search__button .search__icon
+        fill: $primary-color
 
   &__button
     align-items: center
@@ -280,9 +300,13 @@
     cursor: pointer
     display: flex
     justify-content: center
-    height: 50px
+    height: 40px
+    left: auto
     padding: 0
-    width: 50px
+    right: 10px
+    top: 0
+    position: absolute
+    width: 40px
 
     &:hover,
     &:focus

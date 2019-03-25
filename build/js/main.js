@@ -19,6 +19,15 @@ $(".search__button").click(function() {
   }
 });
 
+//потеря фокуса поля поиска
+$('.search__input').blur(function() {
+  if ($(this).val() != 0) {
+    $(this).addClass('focus');
+  } else {
+    $(this).removeClass('focus');
+  }
+});
+
 //залипание меню при скролле (из-за позиционирования приходится работать с постоянными числами)
 $(window).scroll(function () {
   var breake;
@@ -33,4 +42,11 @@ $(window).scroll(function () {
   } else {
     $('.header').removeClass('fixed');
   }
+});
+
+$(document).ready(function () {
+  //инициализация кастомного select
+  setTimeout(function() {
+    $('.js-select').styler();
+  }, 100);
 });

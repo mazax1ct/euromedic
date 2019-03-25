@@ -15,11 +15,22 @@
   transition: background-color 0.3s
   vertical-align: middle
 
-  &:hover,
-  &:active,
-  &:focus
-    background-color: darken($secondary-color,10%)
-    color: #fff
+  &--primary
+    background-color: $primary-color
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: darken($primary-color,10%)
+      color: #fff
+
+  &--secondary
+
+    &:hover,
+    &:active,
+    &:focus
+      background-color: darken($secondary-color,10%)
+      color: #fff
 
   &:focus
     outline: 1px dotted #000

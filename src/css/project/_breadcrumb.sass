@@ -1,0 +1,34 @@
+.breadcrumb
+  color: #555
+  display: none
+  flex-wrap: wrap
+  list-style: none
+  margin-top: 25px
+  margin-bottom: 25px
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+
+  @media(min-width: 1200px)
+    font-size: 16px
+    margin-top: 35px
+
+  &__item
+    margin-right: 15px
+
+    &::after
+      content: "/"
+      margin-left: 15px
+
+    &:last-child
+      &::after
+        content: ""
+
+  &__link
+    color: $primary-color
+    text-decoration: underline
+
+    &:hover
+      color: $secondary-color
+      text-decoration: none
