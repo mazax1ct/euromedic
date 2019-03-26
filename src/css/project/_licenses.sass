@@ -5,10 +5,12 @@
     padding-right: 4.166666%
 
 .license
-  border: 2px solid $secondary-color
+  box-shadow: inset 0px 0px 0px 2px $secondary-color
   display: block
   margin-bottom: 30px
-  transition: border-color 0.3s
+  padding: 4px
+  transition: box-shadow 0.3s
 
-  &:hover
-    border-color: $primary-color
+  &:hover,
+  &:focus
+    box-shadow: inset 0px 0px 0px 4px $secondary-color

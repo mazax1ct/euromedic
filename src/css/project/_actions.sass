@@ -1,0 +1,199 @@
+.actions
+  @media(min-width: 1200px)
+    margin-bottom: 40px
+    padding-left: 4.166666%
+    padding-right: 4.166666%
+
+.actions-sections
+  background-color: $primary-color
+  background-position: 0 0
+  background-size: cover
+  background-image: url('../images/raster/backgrounds/actions.png')
+  height: 100%
+  list-style: none
+  margin: 0
+  padding: 45px 0
+
+  &__item
+    &:last-child
+      margin-top: 15px
+
+  &__link
+    background-color: transparent
+    color: #fff
+    display: block
+    min-height: 30px
+    padding-left: 30px
+    padding-right: 30px
+    transition: background-color 0.3s, color 0.3s
+
+    &:hover,
+    &:focus,
+    &.is-active
+      background-color: #fff
+      color: $primary-color
+
+  &__link-text
+    border-bottom: 1px dotted
+
+.action
+  box-shadow: inset 0px 0px 0px 2px $secondary-color
+  color: $text-color
+  display: block
+  margin-bottom: 30px
+  overflow: hidden
+  padding: 2px
+  text-decoration: none
+  transition: box-shadow 0.3s
+
+  @media(min-width: 992px)
+    padding: 4px
+
+  &:last-child
+    margin-bottom: 0
+
+  &:hover,
+  &:focus
+    box-shadow: inset 0px 0px 0px 4px $secondary-color
+
+  &__inner
+    display: flex
+    position: relative
+
+    @media(min-width: 992px)
+      padding: 15px
+
+  &__description
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    padding-left: 30px
+    padding-right: 30px
+    position: relative
+
+    @media(max-width: 991px)
+      background-color: rgba(255,255,255,0.7)
+      height: 100%
+      left: 0
+      position: absolute
+      padding: 20px
+      top: 0
+      width: 100%
+
+  &__title,
+  &__price,
+  &__feature,
+  &__address
+    display: block
+
+  &__title
+    align-items: center
+    background-color: $primary-color
+    color: #fff
+    display: flex
+    font-size: 20px
+    font-weight: 700
+    height: 40px
+    line-height: 1
+    margin-bottom: 20px
+    margin-left: -50px
+    padding-left: 45px
+    position: relative
+    text-transform: uppercase
+
+    @media(min-width: 992px)
+      font-size: 26px
+      height: 60px
+      margin-right: -90px
+      margin-top: 35px
+
+    &::after
+      left: 100%
+      top: 50%
+      border: solid transparent
+      content: ''
+      height: 0
+      width: 0
+      position: absolute
+      pointer-events: none
+      border-color: rgba(255, 255, 255, 0)
+      border-left-color: $primary-color
+      border-width: 20px
+      margin-top: -20px
+
+      @media(min-width: 992px)
+        border-width: 30px
+        margin-top: -30px
+
+  &__price
+    color: $primary-color
+    font-size: 32px
+    font-weight: 700
+    line-height: 1
+    margin-top: auto
+    margin-bottom: auto
+    white-space: nowrap
+
+  &__feature
+    @media(min-width: 1200px)
+      font-size: 16px
+
+  &__address
+    font-size: 11px
+    margin-top: auto
+    margin-bottom: -0.33em
+
+  &__image
+    @media(min-width: 992px)
+      min-width: 42%
+      width: 42%
+
+.actions-slider
+  margin-left: -15px
+  margin-right: -15px
+
+  &__slide
+    padding-left: 15px
+    padding-right: 15px
+
+    .action__inner
+      @media(min-width: 768px)
+        padding: 10px
+
+    .action__image
+      @media(min-width: 768px)
+        min-width: 42%
+        width: 42%
+
+      @media(min-width: 992px)
+        min-width: 57%
+        width: 57%
+
+    .action__description
+      @media(min-width: 768px)
+        height: auto
+        position: static
+        padding-left: 10px
+        padding-right: 10px
+
+      @media(min-width: 768px) and (max-width: 1199px)
+        padding-top: 10px
+        padding-bottom: 10px
+
+    .action__title
+      @media(min-width: 768px)
+        margin-right: -60px
+
+      @media(min-width: 992px)
+        margin-right: -140px
+
+      @media(min-width: 768px) and (max-width: 1199px)
+        margin-bottom: 10px
+
+    .action__price
+      @media(min-width: 768px) and (max-width: 1199px)
+        font-size: 20px
+
+    .action__feature
+      @media(min-width: 768px) and (max-width: 1199px)
+        font-size: 11px

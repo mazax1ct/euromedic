@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Главная</title>
+  <title>Новости</title>
 
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -53,6 +53,12 @@
     <symbol id="phone" viewBox="0 0 20 20">
       <path d="M19,19.3l0.9-4.1c0.1-0.4-0.1-0.9-0.5-1.1l-4.4-1.9c-0.4-0.2-0.8-0.1-1.1,0.3L12,14.9C9,13.5,6.5,11,5.1,8L7.5,6c0.3-0.3,0.4-0.7,0.3-1.1L5.9,0.6C5.7,0.2,5.2-0.1,4.8,0L0.7,1C0.3,1.1,0,1.4,0,1.9C0,11.9,8.1,20,18.1,20C18.6,20,18.9,19.7,19,19.3z"/>
     </symbol>
+    <symbol id="slider_arrow_left" viewBox="0 0 18 36">
+      <path d="M5.2,18L17,2.2c0.4-0.5,0.2-1.2-0.5-1.5l-1.2-0.5c-0.7-0.3-1.5-0.1-1.9,0.4L1,17.2c-0.2,0.2-0.2,0.5-0.1,0.8c-0.1,0.3,0,0.5,0.1,0.8l12.4,16.7c0.4,0.5,1.2,0.7,1.9,0.4l1.2-0.5c0.7-0.3,0.9-0.9,0.5-1.5L5.2,18z"/>
+    </symbol>
+    <symbol id="slider_arrow_right" viewBox="0 0 18 36">
+      <path d="M17,17.2L4.6,0.6C4.2,0.1,3.4-0.1,2.7,0.2L1.5,0.7C0.8,1,0.6,1.7,1,2.2L12.8,18L1,33.8c-0.4,0.5-0.2,1.2,0.5,1.5l1.2,0.5c0.7,0.3,1.5,0.1,1.9-0.4L17,18.8c0.2-0.2,0.2-0.5,0.1-0.8C17.2,17.7,17.2,17.5,17,17.2z"/>
+    </symbol>
   </svg>
 
   <div class="wrapper">
@@ -82,6 +88,7 @@
             <a class="header__phone" href="tel:+78124540103">+7 (812) 454-01-03</a>
             <p class="header__work-time">С 9 ДО 21</p>
           </div>
+          <button class="js-search-opener search-opener" title="Поиск"><svg class="search-opener__icon" aria-hidden="true"><use xlink:href="#search"/></svg><span class="search-opener__close"></span></button>
           <div class="header__button-block">
             <a class="button button--secondary" data-fancybox="appointment" data-src="#appointment" href="javascript:void(0)">ЗАПИСЬ НА ПРИЕМ</a>
           </div>
@@ -100,7 +107,7 @@
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Заметки ГлавВрача</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Вакансии</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Видеогалерея</a></li>
-                    <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Лицензии</a></li>
+                    <li class="secondary-menu__item"><a class="secondary-menu__link" href="licenses.html">Лицензии</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Оборудование</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Пресса о нас</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Отзывы</a></li>
@@ -134,14 +141,14 @@
               </li>
               <li class="main-menu__item"><a class="main-menu__link" href="">Наши врачи</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="">Цены</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="">Акции</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="actions.html">Акции</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="">Лечение за рубежом</a></li>
               <li class="main-menu__item root" aria-haspopup="true">
                 <a class="main-menu__link" href="javascript:void(0)">Блог</a>
                 <div class="main-menu__dropdown" aria-label="submenu">
                   <ul class="secondary-menu">
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Статьи</a></li>
-                    <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Новости</a></li>
+                    <li class="secondary-menu__item"><a class="secondary-menu__link" href="news.html">Новости</a></li>
                   </ul>
                 </div>
               </li>
@@ -151,7 +158,163 @@
         </div>
       </div>
     </header>
-    <div class="container"></div>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="main.html">Главная</a></li>
+        <li class="breadcrumb__item">Новости</li>
+      </ol>
+      <h1>Новости компании</h1>
+      <div class="news-list">
+        <div class="row">
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_9.jpg" alt="О воде из-под крана" title="О воде из-под крана"/>
+              <span class="news__text-block">
+                <span class="news__title">О воде из-под крана</span>
+                <span class="news__date">22 января 2019</span>
+                <span class="news__preview">Генеральный директор клиник ЕвроМедика на канале 78. Эфир "О воде из-под крана"</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_10.jpg" alt="О Витамине D" title="О Витамине D"/>
+              <span class="news__text-block">
+                <span class="news__title">О Витамине D</span>
+                <span class="news__date">22 января 2019</span>
+                <span class="news__preview">Директор клиники ЕвроМедика на канале 78 о Витамине Д</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_11.jpg" alt="О здоровье сердца" title="О здоровье сердца"/>
+              <span class="news__text-block">
+                <span class="news__title">Динный заголовок не такой как придумал дзайнер не думающий о количестве контента</span>
+                <span class="news__date">10 декабря 2018</span>
+                <span class="news__preview">Генеральный директор клиник ЕвроМедика на канале 78. Эфир "О воде из-под крана"</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_10.jpg" alt="О здоровье сердца" title="О здоровье сердца"/>
+              <span class="news__text-block">
+                <span class="news__title">Заголовок статьи</span>
+                <span class="news__date">10 декабря 2018</span>
+                <span class="news__preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_9.jpg" alt="О воде из-под крана" title="О воде из-под крана"/>
+              <span class="news__text-block">
+                <span class="news__title">О воде из-под крана</span>
+                <span class="news__date">22 января 2019</span>
+                <span class="news__preview">Генеральный директор клиник ЕвроМедика на канале 78. Эфир "О воде из-под крана"</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_10.jpg" alt="О Витамине D" title="О Витамине D"/>
+              <span class="news__text-block">
+                <span class="news__title">О Витамине D</span>
+                <span class="news__date">22 января 2019</span>
+                <span class="news__preview">Директор клиники ЕвроМедика на канале 78 о Витамине Д</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_11.jpg" alt="О здоровье сердца" title="О здоровье сердца"/>
+              <span class="news__text-block">
+                <span class="news__title">Динный заголовок не такой как придумал дзайнер не думающий о количестве контента</span>
+                <span class="news__date">10 декабря 2018</span>
+                <span class="news__preview">Генеральный директор клиник ЕвроМедика на канале 78. Эфир "О воде из-под крана"</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a class="news" href="news-detail.html">
+              <img class="news__image" src="images/raster/content/img_10.jpg" alt="О здоровье сердца" title="О здоровье сердца"/>
+              <span class="news__text-block">
+                <span class="news__title">Заголовок статьи</span>
+                <span class="news__date">10 декабря 2018</span>
+                <span class="news__preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="more-block">
+          <a class="more-link" href="javascript:void(0)"><span class="more-link__text">Все новости</span></a>
+        </div>
+      </div>
+      <h2>Акции</h2>
+      <div class="actions">
+        <div class="js-actions-slider actions-slider">
+          <div class="actions-slider__slide">
+            <a class="action" href="#">
+              <span class="action__inner">
+                <span class="action__description">
+                  <span class="action__title">Скидка 15%</span>
+                  <span class="action__feature">На адоминальную декомпрессию.</span>
+                  <span class="action__price">5900 руб.</span>
+                  <span class="action__address">Только в Приморском районе</span>
+                </span>
+                <span class="action__image"><img src="images/raster/content/img_13.jpg" alt="Скидка 15%" title="Скидка 15%"></span>
+              </span>
+            </a>
+          </div>
+          <div class="actions-slider__slide">
+            <a class="action" href="#">
+              <span class="action__inner">
+                <span class="action__description">
+                  <span class="action__title">Скидка 15%</span>
+                  <span class="action__feature">На адоминальную декомпрессию.</span>
+                  <span class="action__price">5900 руб.</span>
+                  <span class="action__address">Только в Приморском районе</span>
+                </span>
+                <span class="action__image"><img src="images/raster/content/img_13.jpg" alt="Скидка 15%" title="Скидка 15%"></span>
+              </span>
+            </a>
+          </div>
+          <div class="actions-slider__slide">
+            <a class="action" href="#">
+              <span class="action__inner">
+                <span class="action__description">
+                  <span class="action__title">Скидка 15%</span>
+                  <span class="action__feature">На адоминальную декомпрессию.</span>
+                  <span class="action__price">5900 руб.</span>
+                  <span class="action__address">Только в Приморском районе</span>
+                </span>
+                <span class="action__image"><img src="images/raster/content/img_13.jpg" alt="Скидка 15%" title="Скидка 15%"></span>
+              </span>
+            </a>
+          </div>
+          <div class="actions-slider__slide">
+            <a class="action" href="#">
+              <span class="action__inner">
+                <span class="action__description">
+                  <span class="action__title">Скидка 15%</span>
+                  <span class="action__feature">На адоминальную декомпрессию.</span>
+                  <span class="action__price">5900 руб.</span>
+                  <span class="action__address">Только в Приморском районе</span>
+                </span>
+                <span class="action__image"><img src="images/raster/content/img_13.jpg" alt="Скидка 15%" title="Скидка 15%"></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
@@ -310,6 +473,7 @@
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
