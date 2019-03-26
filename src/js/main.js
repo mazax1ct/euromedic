@@ -11,6 +11,13 @@ $(".js-menu-opener").click(function() {
   $("body").toggleClass("overflow");
 });
 
+//открытие/закрытие поиска
+$(".js-search-opener").click(function() {
+  $(this).toggleClass("is-active");
+  $(".header__top").toggleClass("search-open");
+  $("body").toggleClass("overflow");
+});
+
 //обработчик клика по кнопке поиска, в случае если поле поиска пустое
 $(".search__button").click(function() {
   if(!$('.search__input').val()){
