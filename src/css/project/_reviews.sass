@@ -1,0 +1,151 @@
+.reviews-block
+  margin-bottom: 30px
+
+  @media(min-width: 992px)
+    padding-left: 2.083333%
+    padding-right: 2.083333%
+
+  @media(min-width: 1200px)
+    margin-bottom: 115px
+    padding-left: 4.166666%
+    padding-right: 4.166666%
+
+  &:last-child
+    margin-bottom: 0
+
+.reviews-slider
+  margin-left: -15px
+  margin-right: -15px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__slide
+    padding-left: 15px
+    padding-right: 15px
+
+  .slick-track
+    @media(min-width: 768px)
+      display: flex
+
+  .slick-slide
+    height: auto
+
+    & > div
+      @media(min-width: 768px)
+        display: flex
+        height: 100%
+
+      .reviews-slider__slide
+        @media(min-width: 768px)
+          display: flex
+
+      .review
+        @media(min-width: 768px)
+          display: flex
+          flex-direction: column
+          height: 100%
+
+      .review__text
+        @media(min-width: 768px)
+          flex-grow: 1
+
+.review
+  &--video
+    margin-bottom: 30px
+    text-align: center
+
+    .review__rating-block
+      justify-content: center
+      margin-bottom: 25px
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media(min-width: 1200px)
+      font-size: 24px
+
+  &__date
+    margin-bottom: 10px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+  &__rating-block
+    display: flex
+    margin-bottom: 20px
+
+  &__rating
+    fill: none
+    stroke: $primary-color
+    height: 32px
+    margin-right: 5px
+    width: 33px
+
+    &--full
+      fill: $primary-color
+
+    &:last-child
+      margin-right: 0
+
+  &__text
+    @media(min-width: 1200px)
+      font-size: 16px
+
+  &__image
+    border-radius: 20px
+
+  &__video
+    display: block
+    position: relative
+    width: 100%
+    height: 0
+    padding-bottom: 56.25%
+
+  &__video-link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    &:hover,
+    &:focus
+      .review__video-svg
+        fill: #ff0000
+        opacity: 1
+
+  &__video-media
+    border-radius: 20px
+
+  &__video-media,
+  .video-iframe
+    border-radius: 20px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: none
+
+  &__video-button
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 1
+    padding: 0
+    width: 119px
+    height: 84px
+    border: none
+    background-color: transparent
+    transform: translate(-50%, -50%)
+    cursor: pointer
+
+  &__video-svg
+    fill: #fff
+    height: 84px
+    opacity: 0.8
+    transition: all 0.3s
+    width: 119px
