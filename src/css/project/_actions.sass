@@ -1,8 +1,12 @@
 .actions
+  margin-bottom: 40px
+
   @media(min-width: 1200px)
-    margin-bottom: 40px
     padding-left: 4.166666%
     padding-right: 4.166666%
+
+  &:last-child
+    margin-bottom: 0
 
 .actions-sections
   background-color: $primary-color
@@ -80,7 +84,11 @@
       top: 0
       width: 100%
 
+    @media(min-width: 992px)
+      width: 58%
+
   &__title,
+  &__title-text,
   &__price,
   &__feature,
   &__address
@@ -91,7 +99,7 @@
     background-color: $primary-color
     color: #fff
     display: flex
-    font-size: 20px
+    font-size: 18px
     font-weight: 700
     height: 40px
     line-height: 1
@@ -102,7 +110,7 @@
     text-transform: uppercase
 
     @media(min-width: 992px)
-      font-size: 26px
+      font-size: 22px
       height: 60px
       margin-right: -90px
       margin-top: 35px
@@ -124,6 +132,11 @@
       @media(min-width: 992px)
         border-width: 30px
         margin-top: -30px
+
+  &__title-text
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
 
   &__price
     color: $primary-color
@@ -148,9 +161,22 @@
       min-width: 42%
       width: 42%
 
+.actions-slider-block
+  @media(min-width: 992px)
+    padding-left: 2.083333%
+    padding-right: 2.083333%
+
+  @media(min-width: 1200px)
+    padding-left: 4.166666%
+    padding-right: 4.166666%
+
 .actions-slider
   margin-left: -15px
   margin-right: -15px
+  margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
 
   &__slide
     padding-left: 15px
@@ -175,14 +201,21 @@
         position: static
         padding-left: 10px
         padding-right: 10px
+        width: 57%
 
       @media(min-width: 768px) and (max-width: 1199px)
         padding-top: 10px
         padding-bottom: 10px
 
+      @media(min-width: 992px)
+        width: 43%
+
     .action__title
       @media(min-width: 768px)
-        margin-right: -60px
+        font-size: 18px
+        height: 60px
+        margin-right: -90px
+        margin-top: 35px
 
       @media(min-width: 992px)
         margin-right: -140px
@@ -190,10 +223,17 @@
       @media(min-width: 768px) and (max-width: 1199px)
         margin-bottom: 10px
 
-    .action__price
-      @media(min-width: 768px) and (max-width: 1199px)
-        font-size: 20px
+      @media(min-width: 992px) and (max-width: 1199px)
+        margin-top: 15px
+
+      &::after
+        @media(min-width: 768px)
+          border-width: 30px
+          margin-top: -30px
 
     .action__feature
-      @media(min-width: 768px) and (max-width: 1199px)
+      @media(min-width: 992px)
         font-size: 11px
+
+      @media(min-width: 1200px)
+        font-size: 14px

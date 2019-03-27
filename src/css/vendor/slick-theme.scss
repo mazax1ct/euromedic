@@ -23,7 +23,7 @@
   &__icon {
     fill: $secondary-color;
     height: 36px;
-    transition: fill 0.3s;
+    transition: all 0.3s;
     width: 18px;
   }
 
@@ -32,6 +32,8 @@
     .slick-next__icon,
     .slick-prev__icon {
       fill: $primary-color;
+      height: 54px;
+      width: 27px;
     }
   }
 }
@@ -43,10 +45,26 @@
 
 .slick-prev {
   left: 0;
+
+  @media(min-width: 768px) {
+    left: -18px
+  }
+
+  @media(min-width: 1200px) {
+    left: -36px
+  }
 }
 
 .slick-next {
   right: 0;
+
+  @media(min-width: 768px) {
+    right: -18px
+  }
+
+  @media(min-width: 1200px) {
+    right: -36px
+  }
 }
 
 .slick-dotted.slick-slider {

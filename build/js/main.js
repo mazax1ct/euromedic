@@ -69,7 +69,7 @@ $(document).ready(function () {
       prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
       nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
       responsive: [{
-        breakpoint: 767,
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2

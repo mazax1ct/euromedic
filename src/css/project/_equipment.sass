@@ -1,0 +1,64 @@
+.equipment
+  margin-bottom: 40px
+
+  &:last-child
+    margin-bottom: 0
+
+.equip
+  color: $text-color
+  display: block
+  height: 0
+  margin-bottom: 30px
+  position: relative
+  padding-bottom: 94.54%
+
+  &:hover,
+  &:focus
+    .equip__link
+      color: $secondary-color
+
+  &__image
+    left: 50%
+    max-height: 100%
+    position: absolute
+    top: 0
+    transform: translateX(-50%)
+    z-index: 1
+
+  &__description
+    background-color: rgba(255,255,255,0.85)
+    bottom: 0
+    left: 0
+    padding: 15px
+    position: absolute
+    top: auto
+    width: 100%
+    z-index: 2
+
+    @media(min-width: 1200px)
+      padding: 20px
+
+  &__title,
+  &__preview
+    display: block
+    text-align: center
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+
+    @media(min-width: 1200px)
+      font-size: 24px
+      line-height: 1.2
+
+  &__preview
+    min-height: 2.8em
+
+  &__link-block
+    display: block
+    text-align: right
+
+  &__link
+    border-bottom: 1px dotted
+    color: $primary-color
+    transition: color 0.3s

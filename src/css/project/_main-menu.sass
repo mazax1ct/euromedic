@@ -96,7 +96,20 @@
 
   &__item
     &.root
-      &:hover,
+      &:hover
+        .main-menu__dropdown
+          display: block
+          opacity: 1
+          visibility: visible
+
+        .main-menu__link
+          @media(min-width: 992px)
+            background-color: $secondary-color
+
+          &:focus
+            & + .main-menu__dropdown
+              display: block
+
       &:focus-within
         .main-menu__dropdown
           display: block
