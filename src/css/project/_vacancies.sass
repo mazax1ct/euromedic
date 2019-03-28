@@ -1,0 +1,65 @@
+.vacancies-list
+  margin-top: 30px
+
+  @media(min-width: 768px)
+    margin-top: 50px
+
+  @media(min-width: 992px)
+    margin-top: 80px
+
+.toggle-block
+  margin-bottom: 10px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__title
+    font-size: 18px
+    margin-bottom: 0
+
+  &__title-text
+    border-bottom: 1px dotted
+    color: $primary-color
+    cursor: pointer
+
+  &__inner
+    display: none
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+
+    &.is-active
+      display: block
+
+    .toggle-block__title
+      font-size: 16px
+
+    .toggle-block__title-text
+      &.is-active
+        border-bottom-color: transparent
+        color: $text-color
+        font-weight: 500
+
+    .toggle-block__inner
+      font-size: 14px
+
+      @media(max-width: 767px)
+        padding-left: 0
+        padding-right: 0
+
+  &__table
+    td
+      border-bottom: 1px solid #ccc
+      vertical-align: middle
+
+      &:first-child
+        padding-left: 0
+
+    a
+      border-bottom: 1px dotted
+      color: $primary-color
+      font-size: 16px
+
+.employer
+  color: #959595

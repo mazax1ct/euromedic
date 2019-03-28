@@ -35,6 +35,12 @@ $('.search__input').blur(function() {
   }
 });
 
+//тогглер блока вакансий
+$('.js-toggler').click(function() {
+  $(this).toggleClass('is-active');
+  $('.js-toggle-block[data-id="'+ $(this).attr('data-id') +'"]').toggleClass('is-active');
+});
+
 //залипание меню при скролле (из-за позиционирования приходится работать с постоянными числами)
 $(window).scroll(function () {
   var breake;

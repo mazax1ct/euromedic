@@ -18,6 +18,9 @@ a
   transition: color 0.3s
   text-decoration: none
 
+  &:hover
+    color: $primary-color
+
 h1,.h1,
 h2,.h2,
 h3,.h3,
@@ -34,8 +37,8 @@ h2,.h2
   @media(min-width: 1200px)
     font-size: 34px
     margin-bottom: 50px
-    padding-left: 8.333333%
-    padding-right: 8.333333%
+    padding-left: 9.0909%
+    padding-right: 9.0909%
 
 h1,.h1,
 h2,.h2,
@@ -71,3 +74,51 @@ img
   height: auto
   max-width: 100%
   vertical-align: top
+
+.table-responsive
+  display: block
+  width: 100%
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+
+.markered-list
+  list-style: none
+  margin-top: 40px
+  margin-bottom: 40px
+  padding-left: 0
+
+  li
+    position: relative
+    padding-left: 25px
+
+    @media(min-width: 768px)
+      padding-left: 40px
+
+    &::before
+      background: url('../images/vector/list-marker.svg') no-repeat 0 0 / 17px 16px transparent
+      content: ''
+      height: 16px
+      left: 0
+      position: absolute
+      top: 0.7em
+      transform: translateY(-50%)
+      width: 17px
+
+      @media(min-width: 1200px)
+        background-size: 17px 20px
+        height: 20px
+
+.text-block1
+  @media(min-width: 1200px)
+    padding-left: 4.166666%
+    padding-right: 4.166666%
+
+.text-block2
+  @media(min-width: 1200px)
+    padding-left: 9.0909%
+    padding-right: 9.0909%
+
+.text-block3
+  @media(min-width: 1200px)
+    padding-left: 13.63636%
+    padding-right: 13.63636%
