@@ -1,0 +1,39 @@
+.activities
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 50px
+
+  @media(min-width: 992px)
+    margin-bottom: 80px
+
+  @media(min-width: 1200px)
+    margin-bottom: 100px
+
+  &__list
+    list-style: none
+    margin-bottom: 15px
+    padding-left: 0
+
+    &:last-child
+      margin-bottom: 15px
+
+      @media(min-width: 768px)
+        margin-bottom: 0
+
+    li
+      margin-bottom: 15px
+
+      &:last-child
+        margin-bottom: 0
+
+  &__link
+    color: $primary-color
+    font-weight: 700
+
+    &:hover,
+    &:focus
+      border-bottom: 1px dotted
+
+    @media(max-width: 1199px)
+      border-bottom: 1px dotted

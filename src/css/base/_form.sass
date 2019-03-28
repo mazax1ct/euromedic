@@ -1,4 +1,14 @@
 .form
+  &--inline
+    @media(min-width: 768px)
+      display: flex
+
+    .form__label
+      @media(min-width: 768px)
+        flex-grow: 1
+        margin-bottom: 0
+        margin-right: 30px
+
   &__label
     display: block
     margin-bottom: 18px
