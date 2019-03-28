@@ -65,6 +65,9 @@
     <symbol id="youtube-play" viewBox="0 0 119 86.8">
       <path d="M116.8,19c0,0-1.2-8.7-4.7-12.2c-4.7-4.7-9.3-5.2-11.6-5.2C83.6,0.4,59.2,0.4,59.2,0.4l0,0c0,0-25,0-41.3,1.2c-2.3,0.6-7.6,0.6-11.6,5.2C2.8,10.2,1.7,19,1.7,19s-1.2,9.9-1.2,19.8v1.2V48c0,9.9,1.2,19.8,1.2,19.8S2.8,76.5,6.3,80c4.7,5.2,10.5,4.7,13.4,5.2c9.3,1.2,40.1,1.2,40.1,1.2s25,0,41.3-1.2c2.3-0.6,7.6-0.6,11.6-5.2c3.5-4.1,4.7-12.2,4.7-12.2s1.2-9.9,1.2-19.8v-7.6v-1.7C117.9,29.4,116.8,19,116.8,19 M78.4,42.8l-32,17.4V33.5v-8.1L61,33.5L78.4,42.8z"/>
     </symbol>
+    <symbol id="list-marker" viewBox="0 0 17 20">
+      <polygon points="15.9,10 0.5,19.1 0.5,0.9"/>
+    </symbol>
   </svg>
 
   <div class="wrapper">
@@ -112,7 +115,7 @@
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">О руководителе</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Заметки ГлавВрача</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Вакансии</a></li>
-                    <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Видеогалерея</a></li>
+                    <li class="secondary-menu__item"><a class="secondary-menu__link" href="video.html">Видеогалерея</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="licenses.html">Лицензии</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="equipment.html">Оборудование</a></li>
                     <li class="secondary-menu__item"><a class="secondary-menu__link" href="">Пресса о нас</a></li>
@@ -456,6 +459,31 @@
   
   <div id="head_doctor" class="popup">
     <p class="popup__title">Связаться с Главным Врачом</p>
+    <p class="popup__note">Заполняя данную форму, Вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>.</p>
+    <form class="form" action="" method="post">
+      <label class="form__label">
+        <input class="input" type="text" name="user_name_" value="" placeholder="Имя">
+      </label>
+      <label class="form__label">
+        <input class="input" type="text" name="user_email_" value="" placeholder="Электронная почта">
+      </label>
+      <label class="form__label">
+        <textarea class="textarea" name="user_message_" placeholder="Ваше сообщение"></textarea>
+      </label>
+      <div class="form__captcha-block">
+        <div class="form__captcha"><img class="form__captcha-img" src="images/raster/content/captcha.jpg" alt="DUDLFVND" title="DUDLFVND"></div>
+        <label class="form__label">
+          <input class="input" type="text" name="captcha_" value="" placeholder="Введите капчу">
+        </label>
+      </div>
+      <div class="form__button-block">
+        <button class="form__button button button--primary" type="submit">ОТПРАВИТЬ</button>
+      </div>
+    </form>
+  </div>
+  
+  <div id="add_review" class="popup">
+    <p class="popup__title">Оставить отзыв</p>
     <p class="popup__note">Заполняя данную форму, Вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>.</p>
     <form class="form" action="" method="post">
       <label class="form__label">

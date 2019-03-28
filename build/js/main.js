@@ -119,4 +119,35 @@ $(document).ready(function () {
       }]
     });
   }
+
+  //слайдер видео
+  if ($('.js-videos-slider').length) {
+    $('.js-videos-slider').slick({
+      adaptiveHeight: true,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      edgeFriction: 0,
+      arrows: true,
+      dots: false,
+      prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4
+          }
+        }
+      ]
+    });
+  }
 });

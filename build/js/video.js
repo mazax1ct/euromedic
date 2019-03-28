@@ -1,18 +1,18 @@
 function findVideos() {
-	let videos = document.querySelectorAll('.js-video');
+	var videos = document.querySelectorAll('.js-video');
 
-	for (let i = 0; i < videos.length; i++) {
+	for (var i = 0; i < videos.length; i++) {
 		setupVideo(videos[i]);
 	}
 }
 
 function setupVideo(video) {
-	let link = video.querySelector('.js-video__link');
-	let button = video.querySelector('.js-video__button');
-	let id = parseMediaURL(link.href);
+	var link = video.querySelector('.js-video__link');
+	var button = video.querySelector('.js-video__button');
+	var id = parseMediaURL(link.href);
 
 	video.addEventListener('click', () => {
-		let iframe = createIframe(id);
+		var iframe = createIframe(id);
 
 		link.remove();
 		button.remove();
@@ -30,18 +30,18 @@ function parseMediaURL(url) {
 }
 
 function createIframe(id) {
-	let iframe = document.createElement('iframe');
+	var iframe = document.createElement('iframe');
 
 	iframe.setAttribute('allowfullscreen', '');
 	iframe.setAttribute('allow', 'autoplay');
 	iframe.setAttribute('src', generateURL(id));
-	iframe.classList.add('video-iframe');
+	iframe.classList.add('video__iframe');
 
 	return iframe;
 }
 
 function generateURL(id) {
-	let query = '?rel=0&showinfo=0&autoplay=1';
+	var query = '?rel=0&showinfo=0&autoplay=1';
 
 	return 'https://www.youtube.com/embed/' + id + query;
 }

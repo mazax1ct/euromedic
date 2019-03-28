@@ -175,12 +175,24 @@
   margin-right: -15px
   margin-bottom: 30px
 
+  @media(min-width: 992px)
+    display: flex
+    flex-wrap: wrap
+
   &:last-child
     margin-bottom: 0
 
+  &.slick-initialized
+    .actions-slider__slide
+      margin-bottom: 0
+
   &__slide
+    margin-bottom: 30px
     padding-left: 15px
     padding-right: 15px
+
+    @media(min-width: 992px)
+      width: 50%
 
     .action__inner
       @media(min-width: 768px)

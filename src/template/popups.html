@@ -61,3 +61,28 @@
     </div>
   </form>
 </div>
+
+<div id="add_review" class="popup">
+  <p class="popup__title">Оставить отзыв</p>
+  <p class="popup__note">Заполняя данную форму, Вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>.</p>
+  <form class="form" action="" method="post">
+    <label class="form__label">
+      <input class="input" type="text" name="user_name_" value="" placeholder="Имя">
+    </label>
+    <label class="form__label">
+      <input class="input" type="text" name="user_email_" value="" placeholder="Электронная почта">
+    </label>
+    <label class="form__label">
+      <textarea class="textarea" name="user_message_" placeholder="Ваше сообщение"></textarea>
+    </label>
+    <div class="form__captcha-block">
+      <div class="form__captcha"><img class="form__captcha-img" src="images/raster/content/captcha.jpg" alt="DUDLFVND" title="DUDLFVND"></div>
+      <label class="form__label">
+        <input class="input" type="text" name="captcha_" value="" placeholder="Введите капчу">
+      </label>
+    </div>
+    <div class="form__button-block">
+      <button class="form__button button button--primary" type="submit">ОТПРАВИТЬ</button>
+    </div>
+  </form>
+</div>
