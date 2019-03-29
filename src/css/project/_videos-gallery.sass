@@ -6,13 +6,9 @@
 
   @media(min-width: 992px)
     margin-bottom: 80px
-    padding-left: 2.083333%
-    padding-right: 2.083333%
 
   @media(min-width: 1200px)
     margin-bottom: 100px
-    padding-left: 4.166666%
-    padding-right: 4.166666%
 
 .videos-slider
   display: flex
@@ -46,8 +42,6 @@
 
   @media(min-width: 1200px)
     margin-bottom: 70px
-    padding-left: 16.666667%
-    padding-right: 16.666667%
 
 .video-link
   color: $text-color
@@ -58,7 +52,10 @@
     color: $secondary-color
     text-decoration: underline
 
-  @media(min-width: 768px)
+  @media(min-width: 992px)
+    padding-left: 30px
+
+  @media(min-width: 1200px)
     padding-left: 40px
 
   &:hover,
@@ -71,7 +68,7 @@
 
   &__marker
     fill: none
-    height: 16px
+    height: 10px
     left: 0
     position: absolute
     stroke: $secondary-color
@@ -79,7 +76,12 @@
     top: 0.6em
     transform: translateY(-50%)
     transition: fill 0.3s
-    width: 17px
+    width: 10px
 
-    @media(min-width: 768px)
+    @media(min-width: 992px)
+      height: 14px
+      width: 14px
+
+    @media(min-width: 1200px)
       height: 20px
+      width: 15px

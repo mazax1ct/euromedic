@@ -1,0 +1,126 @@
+.doctors
+  margin-bottom: 40px
+
+  @media(min-width: 1200px)
+    margin-bottom: 90px
+
+.doctors-sections
+  background-color: $primary-color
+  background-position: 0 0
+  background-size: cover
+  background-image: url('../images/raster/backgrounds/actions.png')
+  height: 100%
+  list-style: none
+  margin: 0
+  padding: 45px 0
+
+  &__link
+    background-color: transparent
+    color: #fff
+    display: block
+    min-height: 30px
+    padding: 5px 30px
+    transition: background-color 0.3s, color 0.3s
+
+    &:hover,
+    &:focus,
+    &.is-active
+      background-color: #fff
+      color: $primary-color
+
+.doctors-section
+  @media(min-width: 1200px)
+    padding-left: 0
+    padding-right: 0
+
+  &__address
+    @media(min-width: 1200px)
+      font-size: 24px
+
+.metro_1
+  color: #dc0031
+
+.metro_2
+  color: #761f80
+
+.doctors-list
+  margin-bottom: 40px
+
+  &:last-child
+    margin-bottom: 0
+
+.doctor
+  display: flex
+  flex-direction: column
+  max-width: 205px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 30px
+  text-align: center
+
+  @media(min-width: 768px)
+    height: 100%
+    margin-bottom: 0
+
+  @media(min-width: 1200px)
+    font-size: 16px
+
+  &__link
+    color: $text-color
+    display: block
+    margin-bottom: 10px
+
+  &__image-block
+    border-radius: 20px 20px 0 0
+    display: block
+    margin-bottom: 10px
+    overflow: hidden
+    max-height: 240px
+
+  &__image
+    border-radius: 20px 20px 0 0
+
+  &__name
+    display: block
+    font-weight: 500
+    text-align: center
+
+  &__about
+    flex-grow: 1
+    margin-bottom: 15px
+
+.doctor-detail
+  margin-bottom: 30px
+
+  @media(min-width:768px)
+    padding-top: 12px
+
+  @media(min-width: 1200px)
+    margin-bottom: 60px
+
+  &__image
+    border-radius: 20px 20px 0 0
+
+  &__title
+    @media(min-width: 1200px)
+      margin-bottom: 30px
+      padding-left: 0
+      padding-right: 0
+
+  &__button-block
+    @media(min-width: 1200px)
+      margin-top: 55px
+      margin-bottom: 45px
+
+  &__about
+    @media(min-width: 1200px)
+      font-size: 16px
+
+.doctor-features
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    margin-bottom: 60px
+
+  &:last-child
+    margin-bottom: 0

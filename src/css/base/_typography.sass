@@ -29,16 +29,20 @@ h5,.h5,
 h6,.h6
   font-weight: 700
 
-h1,.h1,
-h2,.h2
+h1,.h1
   font-size: 30px
   line-height: 1.2
 
+h2,.h2
+  font-size: 20px
+
+h1,.h1,
+h2,.h2
   @media(min-width: 1200px)
     font-size: 34px
     margin-bottom: 50px
-    padding-left: 9.0909%
-    padding-right: 9.0909%
+    padding-left: 5%
+    padding-right: 5%
 
 h1,.h1,
 h2,.h2,
@@ -88,42 +92,71 @@ img
   padding-left: 0
 
   li
+    margin-bottom: 15px
     position: relative
     padding-left: 25px
 
-    @media(min-width: 768px)
+    @media(min-width: 992px)
+      padding-left: 30px
+
+    @media(min-width: 1200px)
       padding-left: 40px
 
+    &:last-child
+      margin-bottom: 0
+
     &::before
-      background: url('../images/vector/list-marker.svg') no-repeat 0 0 / 17px 16px transparent
+      background: url('../images/vector/list-marker.svg') no-repeat 0 0 / 10px 10px transparent
       content: ''
-      height: 16px
+      height: 10px
       left: 0
       position: absolute
       top: 0.7em
       transform: translateY(-50%)
-      width: 17px
+      width: 10px
+
+      @media(min-width: 992px)
+        background-size: 14px 14px
+        height: 14px
+        width: 14px
 
       @media(min-width: 1200px)
-        background-size: 17px 20px
+        background-size: 15px 20px
         height: 20px
+        width: 15px
 
-.text-block1
-  @media(min-width: 1200px)
-    padding-left: 4.166666%
-    padding-right: 4.166666%
+.info-block1
+  background-color: $secondary-color
+  border-radius: 20px
+  color: #fff
+  margin-bottom: 40px
+  padding: 20px
 
-.text-block2
-  @media(min-width: 1200px)
-    padding-left: 7%
-    padding-right: 7%
+  @media(min-width: 768px)
+    padding: 30px 8%
 
-.text-block3
   @media(min-width: 1200px)
-    padding-left: 9.0909%
-    padding-right: 9.0909%
+    font-size: 24px
+    margin-bottom: 90px
+    padding: 45px 16%
 
-.text-block4
+  &:last-child
+    margin-bottom: 0
+
+.info-block2
+  border: 2px solid $secondary-color
+  border-radius: 20px
+  color: $secondary-color
+  margin-bottom: 40px
+  padding: 20px
+  text-align: center
+
+  @media(min-width: 768px)
+    padding: 30px 8%
+
   @media(min-width: 1200px)
-    padding-left: 13.63636%
-    padding-right: 13.63636%
+    margin-bottom: 90px
+    padding: 50px 10%
+
+  &:last-child
+    margin-bottom: 0

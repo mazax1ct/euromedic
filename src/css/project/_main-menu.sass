@@ -212,4 +212,9 @@
 
     &:hover,
     &:focus
-      text-decoration: underline
+      @media(max-width: 991px)
+        background-color: $secondary-color
+        color: #fff
+
+      @media(min-width: 992px)
+        text-decoration: underline
