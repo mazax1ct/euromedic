@@ -3,10 +3,27 @@
   border: 1px solid $secondary-color
   border-radius: 20px
   display: none
-  max-width: 855px !important
+  max-width: 855px
   padding-left: 20px
   padding-right: 20px
   width: 100%
+
+  &.fancybox-content
+    max-width: 855px
+    padding-left: 20px
+    padding-right: 20px
+
+    @media(min-width: 576px)
+      padding-left: 30px
+      padding-right: 30px
+
+    @media(min-width: 768px)
+      padding-left: 44px
+      padding-right: 44px
+
+    @media(min-width: 800px)
+      padding-left: 130px
+      padding-right: 130px
 
   @media(min-width: 576px)
     padding-left: 30px
@@ -34,6 +51,7 @@
   &__title
     font-size: 26px
     font-weight: 700
+    line-height: 1.2
 
     @media(min-width: 768px)
       font-size: 34px

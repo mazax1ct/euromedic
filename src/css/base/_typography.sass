@@ -21,6 +21,12 @@ a
   &:hover
     color: $primary-color
 
+  &.text-color
+    color: $text_color
+
+    &:hover
+      color: $secondary-color
+
 h1,.h1,
 h2,.h2,
 h3,.h3,
@@ -31,18 +37,26 @@ h6,.h6
 
 h1,.h1
   font-size: 30px
-  line-height: 1.2
 
 h2,.h2
   font-size: 20px
 
 h1,.h1,
 h2,.h2
+  line-height: 1.2
+
   @media(min-width: 1200px)
     font-size: 34px
     margin-bottom: 50px
     padding-left: 5%
     padding-right: 5%
+
+h3,.h3
+  font-size: 16px
+
+  @media(min-width: 1200px)
+    font-size: 24px
+    line-height: 1.2
 
 h1,.h1,
 h2,.h2,
