@@ -98,8 +98,17 @@
   @media(min-width: 1200px)
     margin-bottom: 60px
 
+  &__image-block
+    text-align: center
+
+    @media(max-width: 767px)
+      margin-bottom: 30px
+
   &__image
     border-radius: 20px 20px 0 0
+
+    @media(max-width: 767px)
+      max-width: 205px
 
   &__title
     @media(min-width: 1200px)
@@ -124,3 +133,15 @@
 
   &:last-child
     margin-bottom: 0
+
+  &__item
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+    &:last-child
+      margin-bottom: 0
+
+    .markered-list
+      margin-top: 0
