@@ -46,6 +46,7 @@
 .jq-select-multiple {
   position: relative;
   display: inline-block;
+  z-index: 1 !important
 }
 
 .jq-selectbox select,

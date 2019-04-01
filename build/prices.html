@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Наши врачи</title>
+  <title>Цены</title>
 
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -149,7 +149,7 @@
                 </div>
               </li>
               <li class="main-menu__item"><a class="main-menu__link" href="doctors.html">Наши врачи</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="">Цены</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="prices.html">Цены</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="actions.html">Акции</a></li>
               <li class="main-menu__item"><a class="main-menu__link" href="">Лечение за рубежом</a></li>
               <li class="main-menu__item root" aria-haspopup="true">
@@ -161,7 +161,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="main-menu__item"><a class="main-menu__link" href="">Контакты</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -171,67 +171,162 @@
       <div class="content-indents">
         <ol class="breadcrumb">
           <li class="breadcrumb__item"><a class="breadcrumb__link" href="main.html">Главная</a></li>
-          <li class="breadcrumb__item"><a class="breadcrumb__link" href="doctors.html">Наши врачи</a></li>
-          <li class="breadcrumb__item">Чежина Наталья Анатольевна</li>
+          <li class="breadcrumb__item">Цены</li>
         </ol>
-        <div class="doctor-detail row">
-          <div class="col-md-5">
-            <img class="doctor-detail__image" src="images/raster/content/img_42.jpg" alt="Чежина Наталья Анатольевна" title="Чежина Наталья Анатольевна"/>
+        <h1>Цены</h1>
+        <div class="price-selects row">
+          <div class="col-md-6">
+            <select class="js-select">
+              <option>Клиника на Ветеранов</option>
+              <option>Клиника на Комендантском</option>
+              <option>Медицинский центр ПАНАЦЕЯ</option>
+            </select>
           </div>
-          <div class="col-md-7">
-            <h1 class="doctor-detail__title">ЧЕЖИНА<br> Наталья Анатольевна</h1>
-            <p>Врач высшей категории,<br> репродуктолог,<br> гинеколог-эндокринолог,<br> врач ультра-звуковой диагностики.</p>
-            <p class="doctor-detail__button-block"><a class="button button--secondary" data-fancybox="appointment&id_1" data-src="#appointment" href="javascript:void(0)">ЗАПИСЬ НА ПРИЕМ</a></p>
-            <div class="doctor-detail__about">
-              <p><b>Стаж:</b> с 1985 года.</p>
-              <p><b>Образование:</b><br> 1983 год - закончила 1 ЛМИ им. академика Павлова.</p>
-              <p>1994 год - клиническая ординатура по акушерству и гинекологии, включая стажировку в городском онкологическом диспансере.</p>
+          <div class="col-md-6">
+            <select class="js-select">
+              <option>Гинекология</option>
+              <option>Урология</option>
+              <option>Проктология</option>
+              <option>УЗИ</option>
+              <option>Хирургия</option>
+              <option>Флебология</option>
+              <option>Кардиология</option>
+            </select>
+          </div>
+        </div>
+        <h3>Стоимость приёма, процедур и услуг клиники ЕвроМедика</h3>
+        <div class="responsive-table decorated-table-block">
+          <table class="decorated-table">
+            <tr>
+              <td class="decorated-table__title">НАИМЕНОВАНИЕ УСЛУГИ</td>
+              <td class="decorated-table__title text-center nowrap">ЦЕНА В РУБЛЯХ</td>
+            </tr>
+            <tr>
+              <td>Первичная консультация гинеколога, врача высшей медицинской категории</td>
+              <td class="text-center">1 350</td>
+            </tr>
+            <tr>
+              <td>Интимная пластика - увеличение точки G</td>
+              <td class="text-center">22 920</td>
+            </tr>
+            <tr>
+              <td>Интимная пластика - восстановление девственной плевы</td>
+              <td class="text-center">15 520</td>
+            </tr>
+            <tr>
+              <td>Инсеминация - искусственное оплодотворение</td>
+              <td class="text-center">12 800</td>
+            </tr>
+            <tr>
+              <td>Видеокольпоскопия</td>
+              <td class="text-center">от 1 760</td>
+            </tr>
+          </table>
+        </div>
+        <div class="info-block2 info-block2--info_mark">
+          <p><b>Цены в наших филиалах могут отличаться.<br> Подробная информация о стоимости услуг<br> по телефону клиники</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="wide-block wide-block--form_block">
+      <div class="container">
+        <div class="content-indents">
+          <form class="form form--inline" action="">
+            <label class="form__label">
+              <input class="input" type="text" name="user_name" value="" placeholder="Имя">
+            </label>
+            <label class="form__label">
+              <input class="input" type="text" name="user_phone" value="" placeholder="Телефон">
+            </label>
+            <div class="form__button-block">
+              <button class="form__button button button--secondary" type="submit">ЗАПИСЬ НА ПРИЁМ</button>
+            </div>
+          </form>
+          <p class="text-center">Также вы можете позвонить по телефону: <a href="tel:+7812450103"><b>8&nbsp;(812)&nbsp;454&nbsp;01&nbsp;03</b></a></p>
+          <p class="text-center"><small>Нажимая на кнопку "Записатьcя на прием", Вы даете Согласие на обработку персональных данных</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-indents">
+        <h2>Акции</h2>
+        <div class="actions-slider-block">
+          <div class="js-actions-slider actions-slider">
+            <div class="actions-slider__slide">
+              <a class="action" href="#">
+                <span class="action__inner">
+                  <span class="action__description">
+                    <span class="action__title"><span class="action__title-text">Скидка 15%</span></span>
+                    <span class="action__feature">На адоминальную декомпрессию.</span>
+                    <span class="action__price">5900 руб.</span>
+                    <span class="action__address">Только в Приморском районе</span>
+                  </span>
+                  <span class="action__image"><img src="images/raster/content/img_13.jpg" alt="Скидка 15%" title="Скидка 15%"></span>
+                </span>
+              </a>
+            </div>
+            <div class="actions-slider__slide">
+              <a class="action" href="#">
+                <span class="action__inner">
+                  <span class="action__description">
+                    <span class="action__title"><span class="action__title-text">Прием уролога</span></span>
+                    <span class="action__feature">Прием андролога-уролога</span>
+                    <span class="action__price">550 руб*</span>
+                    <span class="action__address">Предложение действует в клинике на Комендантском пр., 17/1</span>
+                  </span>
+                  <span class="action__image"><img src="images/raster/content/img_14.jpg" alt="Прием уролога" title="Прием уролога"></span>
+                </span>
+              </a>
+            </div>
+            <div class="actions-slider__slide">
+              <a class="action" href="#">
+                <span class="action__inner">
+                  <span class="action__description">
+                    <span class="action__title"><span class="action__title-text">Уход за стопами</span></span>
+                    <span class="action__feature">Медицинский педикюр</span>
+                    <span class="action__price">2500 руб.</span>
+                    <span class="action__address">&nbsp;</span>
+                  </span>
+                  <span class="action__image"><img src="images/raster/content/img_15.jpg" alt="Уход за стопами" title="Уход за стопами"></span>
+                </span>
+              </a>
+            </div>
+            <div class="actions-slider__slide">
+              <a class="action" href="#">
+                <span class="action__inner">
+                  <span class="action__description">
+                    <span class="action__title"><span class="action__title-text">Динное название акции которое точно не поместится</span></span>
+                    <span class="action__feature">Скидка на сдачу анализов в выходные дни</span>
+                    <span class="action__price">25%</span>
+                    <span class="action__address">&nbsp;</span>
+                  </span>
+                  <span class="action__image"><img src="images/raster/content/img_15.jpg" alt="Уход за стопами" title="Уход за стопами"></span>
+                </span>
+              </a>
             </div>
           </div>
-        </div>
-        <div class="doctor-features row">
-          <div class="col-md-4">
-            <p><b>Заболевания, услуги и процедуры:</b></p>
-            <ul class="markered-list">
-              <li>лечение скрытых инфекций (медикаментозное и физиотерапевтическое);</li>
-              <li>диагностика и лечение воспалительных заболеваний органов малого таза;</li>
-              <li>диагностика и лечение гормональных нарушений (нарушение менструального цикла, дисфункциональные маточные кровотечения в репродуктивном и переменопаузальном возрастах, гормональная недостаточность яичников и др.);</li>
-              <li>подбор заместительной гормонотерапии и контрацепции;</li>
-              <li>лечение климактерических расстройств;</li>
-              <li>диагностика и лечение бесплодия;</li>
-              <li>лечение эндометриоза;</li>
-              <li>безоперационное лечение миомы матки;</li>
-              <li>диагностика и лечение доброкачественных заболеваний шейки матки</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <p><b>Диагностика:</b></p>
-            <ul class="markered-list">
-              <li>ультразвуковое исследование;</li>
-              <li>ульразвуковая гистеросальпингоскопия (проверка проходимости маточных труб);</li>
-              <li>кольпоскопия;</li>
-              <li>лабораторная диагностика.</li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <p><b>Методы лечения:</b></p>
-            <ul class="markered-list">
-              <li>лечение эктопий шейки матки (вопаризация методом молекулярно-резонансной хирургии);</li>
-              <li>физиотерапия;</li>
-              <li>медикаментозное прерывание беременности;</li>
-              <li>постановка и удаление спирали;</li>
-              <li>современные репродуктивные технологии (все виды стимуляции овуляции, в т.ч. подготовка к ЭКО, инсеминация);</li>
-              <li>хирургическое прерывание беременности ранних сроков (вакуум-аспирация);</li>
-              <li>пластическая хирургия, резекция малых половых губ;</li>
-              <li>хирургическое лечение при кистах бартолиниевой железы;</li>
-              <li>лазерная деструкция;</li>
-              <li>радиохирургическое лечение</li>
-            </ul>
+          <div class="more-block">
+            <a class="more-link" href="javascript:void(0)"><span class="more-link__text">Все акции</span></a>
           </div>
         </div>
-        <div class="info-block2">
-          <p>Информация представленная на сайте не является публичной офертой.<br> Пожалуйста, уточняйте стоимость приёма специалистов у администраторов Клиники.</p>
-          <p>Методы лечения и диагностики могут иметь противопоказания.<br> Убедительная просьба - не забудьте предварительно проконсультироваться с врачом.</p>
+        <h2>Смотреть также</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="see-also" href="#" style="background-image: url('images/raster/content/see-also.jpg')">
+              <span class="see-also__inner">
+                <span class="see-also__title">Наши врачи</span>
+                <span class="see-also__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+              </span>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a class="see-also" href="#" style="background-image: url('images/raster/content/see-also.jpg')">
+              <span class="see-also__inner">
+                <span class="see-also__title">Заметки ГлавВрача</span>
+                <span class="see-also__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -262,14 +357,14 @@
                   <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">О клинике</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href="activities.html"><span class="footer-menu__link-text">Направления</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href="doctors.html"><span class="footer-menu__link-text">Наши врачи</span></a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">Цены</span></a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="prices.html"><span class="footer-menu__link-text">Цены</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href="actions.html"><span class="footer-menu__link-text">Акции</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">Лечение в Европе</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">Обучающий центр</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">HR отдел</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href="news.html"><span class="footer-menu__link-text">Новости</span></a></li>
                   <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">Статьи</span></a></li>
-                  <li class="footer-menu__item"><a class="footer-menu__link" href=""><span class="footer-menu__link-text">Контакты</span></a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="contacts.html"><span class="footer-menu__link-text">Контакты</span></a></li>
                 </ul>
               </div>
             </div>

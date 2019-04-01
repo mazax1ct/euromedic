@@ -249,10 +249,10 @@
 }
 
 .jq-selectbox__select-text {
-  display: block;
+  align-items: center;
+  display: flex;
   height: 38px;
   overflow-x: hidden;
-  padding-top: 7px;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100% !important;

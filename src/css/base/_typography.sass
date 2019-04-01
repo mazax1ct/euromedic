@@ -57,6 +57,8 @@ h3,.h3
   @media(min-width: 1200px)
     font-size: 24px
     line-height: 1.2
+    padding-left: 5%
+    padding-right: 5%
 
 h1,.h1,
 h2,.h2,
@@ -93,11 +95,16 @@ img
   max-width: 100%
   vertical-align: top
 
-.table-responsive
+.table-responsive,
+.responsive-table
   display: block
+  margin-bottom: 40px
   width: 100%
   overflow-x: auto
   -webkit-overflow-scrolling: touch
+
+  &:last-child
+    margin-bottom: 0
 
 .markered-list
   list-style: none
@@ -174,3 +181,55 @@ img
 
   &:last-child
     margin-bottom: 0
+
+  &--info_mark
+    position: relative
+
+    &::after
+      align-items: center
+      border: 1px solid $secondary-color
+      border-radius: 50%
+      color: $secondary-color
+      content: '?'
+      display: flex
+      font-size: 20px
+      height: 30px
+      justify-content: center
+      left: auto
+      position: absolute
+      right: 5px
+      top: 5px
+      width: 30px
+
+.decorated-table-block
+  border: 1px solid #d7d7d7
+  border-radius: 10px
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 45px
+
+  &:last-child
+    margin-bottom: 0
+
+.decorated-table
+  &__title
+    background-color: $primary-color
+    border-bottom: none !important
+    color: #fff
+
+  tr
+    &:last-child
+      td
+        border-bottom: none
+
+  td
+    border-bottom: 1px solid #d7d7d7
+
+    @media(min-width: 1200px)
+      padding-left: 50px
+      padding-right: 50px
+
+  .nowrap
+    @media(max-width: 767px)
+      white-space: normal
