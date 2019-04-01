@@ -128,14 +128,21 @@
 
   <script src="https://api-maps.yandex.ru/2.1/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
   <script type="text/javascript">
-    ymaps.ready(init);
+
+    var zoom;
+
+    if($('body').width() < 768) {
+      zoom = 8;
+    } else {
+      zoom = 9;
+    }
 
     var myMap;
 
     function init() {
       myMap = new ymaps.Map('map', {
           center: [59.957262, 29.705429],
-          zoom: 9
+          zoom: zoom
         }, {
           searchControlProvider: 'yandex#search'
         });
@@ -189,16 +196,21 @@
       myMap.setCenter(coords, 16);
     }
 
-    $('.js-change-map').click(function () {
-      $('.js-change-map').removeClass('is-active');
-      $(this).addClass('is-active');
-      $('.contacts-addresses__item').hide();
-      $('.contacts-addresses__item[data-address="'+$(this).attr('data-address')+'"]').show();
-      var lat = parseFloat($(this).attr('data-lat'));
-      var lon = parseFloat($(this).attr('data-lon'));
-      var centerPoint = [lat, lon];
-      setCenter(centerPoint);
+    $(document).ready(function () {
+      ymaps.ready(init);
+
+      $('.js-change-map').click(function () {
+        $('.js-change-map').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.contacts-addresses__item').hide();
+        $('.contacts-addresses__item[data-address="'+$(this).attr('data-address')+'"]').show();
+        var lat = parseFloat($(this).attr('data-lat'));
+        var lon = parseFloat($(this).attr('data-lon'));
+        var centerPoint = [lat, lon];
+        setCenter(centerPoint);
+      });
     });
+
   </script>
 </body>
 

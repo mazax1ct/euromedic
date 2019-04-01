@@ -319,8 +319,16 @@
 }
 
 .jq-selectbox li {
+  align-items: center;
+  display: flex;
   min-height: 38px;
-  padding: 7px 40px 7px;
+  padding: 7px 20px 7px;
+}
+
+@media(min-width: 1200px) {
+  .jq-selectbox li {
+    padding: 7px 40px 7px;
+  }
 }
 
 .jq-selectbox li.selected {
