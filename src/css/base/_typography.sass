@@ -108,12 +108,14 @@ img
 
 .markered-list
   list-style: none
-  margin-top: 40px
-  margin-bottom: 40px
   padding-left: 0
 
+  @media(min-width: 1200px)
+    margin-top: 40px
+    margin-bottom: 40px
+
   li
-    margin-bottom: 15px
+    margin-bottom: 5px
     position: relative
     padding-left: 25px
 
@@ -121,6 +123,7 @@ img
       padding-left: 30px
 
     @media(min-width: 1200px)
+      margin-bottom: 15px
       padding-left: 40px
 
     &:last-child
@@ -145,6 +148,26 @@ img
         background-size: 15px 20px
         height: 20px
         width: 15px
+
+.numbered-list
+  counter-reset: myCounter
+  list-style: none
+  padding-left: 0
+
+  @media(min-width: 1200px)
+    margin-top: 40px
+    margin-bottom: 40px
+
+  li
+    margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      margin-bottom: 15px
+
+    &::before
+      counter-increment: myCounter
+      content: counter(myCounter) '.)  '
+      color: $secondary-color
 
 .info-block1
   background-color: $secondary-color
@@ -233,3 +256,15 @@ img
   .nowrap
     @media(max-width: 767px)
       white-space: normal
+
+.indented-text1
+  @media(min-width: 1200px)
+    margin-left: 5%
+
+.indented-text2
+  @media(min-width: 1200px)
+    margin-left: 10%
+
+.indented-text3
+  @media(min-width: 1200px)
+    margin-left: 15%

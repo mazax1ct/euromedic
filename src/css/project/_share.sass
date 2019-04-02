@@ -1,0 +1,57 @@
+.share
+  margin-top: 30px
+  margin-bottom: 30px
+
+  @media(min-width: 600px)
+    align-items: center
+    display: flex
+    justify-content: flex-end
+
+  @media(min-width: 1200px)
+    margin-bottom: 60px
+
+  &:first-child
+    margin-top: 0
+
+  &:last-child
+    margin-bottom: 0
+
+  &__title
+    margin-bottom: 10px
+
+    @media(min-width: 600px)
+      margin-right: 60px
+      margin-bottom: 0 !important
+
+.share-link
+  display: inline-block
+  height: 40px
+  margin-right: 5px
+  width: 40px
+
+  &:last-child
+    margin-right: 0
+
+  &:hover,
+  &:focus
+    .social-link__icon--vk
+      fill: #45668e
+
+    .social-link__icon--fb
+      fill: #3b5998
+
+    .social-link__icon--inst
+      fill: #517fa4
+
+    .social-link__icon--yt
+      fill: #bb0000
+
+  &__icon
+    fill: #363636
+    height: 40px
+    transition: fill 0.3s
+    width: 40px
+
+    @media(min-width: 768px) and (max-width: 991px)
+      height: 35px
+      width: 35px
