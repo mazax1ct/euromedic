@@ -156,4 +156,19 @@ $(document).ready(function () {
       ]
     });
   }
+
+  //слайдер картинок
+  if ($('.js-simple-slider').length) {
+    $('.js-simple-slider').slick({
+      adaptiveHeight: true,
+      mobileFirst: true,
+      slidesToShow: 1,
+      infinite: true,
+      edgeFriction: 0,
+      arrows: true,
+      dots: false,
+      prevArrow: '<button type="button" class="slick-prev" title="Назад"><svg class="slick-prev__icon" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+      nextArrow: '<button type="button" class="slick-next" title="Вперед"><svg class="slick-next__icon" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>'
+    });
+  }
 });

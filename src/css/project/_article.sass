@@ -1,25 +1,19 @@
 .article
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    margin-bottom: 80px
+
+  &:last-child
+    margin-bottom: 0
+
   h1,.h1,
   h2,.h2
     @media(min-width: 1200px)
       margin-bottom: 20px
-
-  p,
-  ul,
-  ol
-    @media(min-width: 1200px)
-      margin-bottom: 40px
-
-    &:last-child
-      margin-bottom: 0
-
-  ul,
-  ol
-    @media(min-width: 1200px)
-      margin-top: 40px
-
-    &:first-child
-      margin-top: 0
 
 .article-banner
   margin-bottom: 30px
@@ -41,17 +35,9 @@
       margin-right: -4.166666%
 
 .article-nav
-  margin-bottom: 30px
-
   @media(min-width: 576px)
     display: flex
     justify-content: space-between
-
-  @media(min-width: 768px)
-    margin-bottom: 50px
-
-  @media(min-width: 1200px)
-    margin-bottom: 80px
 
   &__link
     color: $primary-color
