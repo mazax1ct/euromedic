@@ -145,3 +145,48 @@
 
     .markered-list
       margin-top: 0
+
+.doctors-slider
+  display: flex
+  flex-wrap: wrap
+  margin-left: -15px
+  margin-right: -15px
+  margin-bottom: 30px
+
+  &.slick-initialized
+    display: block
+
+    .doctor,
+    .doctors-slider__slide
+      margin-bottom: 0
+
+  &__slide
+    margin-bottom: 30px
+    padding-left: 15px
+    padding-right: 15px
+    width: 100%
+
+    @media(min-width: 768px)
+      display: flex
+      width: 33.333%
+
+    @media(min-width: 992px)
+      width: 25%
+
+    .doctor
+      @media(min-width: 768px)
+        display: flex
+        flex-direction: column
+        height: 100%
+
+  .slick-track
+    @media(min-width: 768px)
+      display: flex
+
+  .slick-slide
+    height: auto
+
+    & > div
+      @media(min-width: 768px)
+        display: flex
+        height: 100%
