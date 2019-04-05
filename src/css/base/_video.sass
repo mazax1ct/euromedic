@@ -33,12 +33,16 @@
     left: 50%
     z-index: 1
     padding: 0
-    width: 119px
-    height: 84px
+    width: 60px
+    height: 42px
     border: none
     background-color: transparent
     transform: translate(-50%, -50%)
     cursor: pointer
+
+    @media(min-width: 768px)
+      width: 119px
+      height: 84px
 
     &:hover,
     &:focus
@@ -48,7 +52,11 @@
 
   &__svg
     fill: #fff
-    height: 84px
     opacity: 0.8
     transition: all 0.3s
-    width: 119px
+    width: 60px
+    height: 42px
+
+    @media(min-width: 768px)
+      width: 119px
+      height: 84px

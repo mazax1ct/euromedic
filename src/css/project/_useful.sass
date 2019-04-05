@@ -1,0 +1,51 @@
+.useful-block
+  margin-top: 30px
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    margin-top: 70px
+    margin-bottom: 90px
+
+.useful-slider
+  margin-bottom: 30px
+
+  &.slick-initialized
+    .useful-slider__slide
+      margin-bottom: 0
+
+  &__slide
+    margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+    h1,.h1,
+    h2,.h2,
+    h3,.h3,
+    p
+      margin-bottom: 15px
+
+      &:last-child
+        margin-bottom: 0
+
+  .video__media,
+  .video__iframe
+    border: 4px solid $primary-color
+
+  .slick-prev
+    left: -12px
+
+    @media(min-width: 768px)
+      left: -34px
+
+    @media(min-width: 1200px)
+      left: -51px
+
+  .slick-next
+    right: -12px
+
+    @media(min-width: 768px)
+      right: -34px
+
+    @media(min-width: 1200px)
+      right: -51px

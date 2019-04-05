@@ -23,12 +23,23 @@
   list-style: none
   padding: 0
 
-.table-responsive
-  min-height: 0.01%
-  overflow-x: auto
+.no-indents
+  @media(min-width: 1200px)
+    padding-left: 0
+    padding-right: 0
 
-.form
-  margin-bottom: 20px
+.no-mb-md
+  @media(min-width: 768px)
+    margin-bottom: 0 !important
 
-  &:last-child
-    margin-bottom: 0
+.mta-md
+  @media(min-width: 768px)
+    margin-top: auto
+
+.text-right-md
+  @media(min-width: 768px)
+    text-align: right
+
+.text-right-xl
+  @media(min-width: 1200px)
+    text-align: right

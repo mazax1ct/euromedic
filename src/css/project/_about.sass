@@ -1,0 +1,157 @@
+.about-title
+  background-color: $primary-color
+  padding-top: 30px
+  padding-bottom: 30px
+
+  @media(min-width: 768px)
+    padding-top: 55px
+    padding-bottom: 55px
+
+  &__inner
+    color: #fff
+    position: relative
+    text-align: center
+
+    h1
+      margin-bottom: 0
+
+  &__button
+    background: url('../images/vector/flag.svg') no-repeat 0 0 transparent
+    height: 140px
+    left: auto
+    position: absolute
+    padding-left: 17px
+    padding-top: 40px
+    right: 0
+    top: -80px
+    text-align: center
+    width: 107px
+
+    &:hover,
+    &:focus
+      img
+        transform: scale(1.1)
+
+    @media(max-width: 767px)
+      display: none
+
+  &__button-image
+    transform: scale(1)
+    transition: transform 0.3s
+    width: 64px
+
+.stats-block
+  background-color: #e2eef8
+  font-size: 13px
+  margin-bottom: 30px
+  padding-top: 30px
+  padding-bottom: 30px
+
+  @media(min-width: 375px)
+    font-size: 14px
+
+  @media(min-width: 768px)
+    padding-top: 45px
+    padding-bottom: 45px
+
+  @media(min-width: 768px)
+    margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    font-size: 20px
+    margin-bottom: 70px
+
+  &__item
+    border-left: 1px solid #fff
+    margin-bottom: 30px
+
+    @media(min-width: 992px)
+      padding-left: 40px
+
+    &:first-child,
+    &:nth-child(3)
+      border-left: none
+
+    &:nth-child(3)
+      @media(min-width: 768px)
+        border-left: 1px solid #fff
+
+  &__title
+    color: $secondary-color
+    font-size: 48px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 15px
+
+.about-block1
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    margin-bottom: 80px
+
+.about-block2
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 50px
+
+.about-block3
+  align-items: center
+  color: $primary-color
+  display: flex
+
+  @media(min-width: 1200px)
+    font-size: 30px
+    margin-bottom: 35px
+
+  .partner-logo
+    margin-right: 10px
+
+  span
+    margin-top: 19px
+
+    @media(min-width: 1200px)
+      margin-top: 13px
+
+.partner-logo
+  img
+    transform: scale(1)
+    transition: transform 0.3s
+
+  &:hover,
+  &:focus
+    img
+      transform: scale(1.2)
+
+.about-block4
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 70px
+
+  @media(min-width: 992px)
+    margin-bottom: 100px
+
+  @media(min-width: 1200px)
+    margin-bottom: 140px
+
+  .partner-logo
+    @media(max-width: 767px)
+      margin-bottom: 30px
+
+.about-block5
+  margin-bottom: 30px
+
+  @media(min-width: 768px)
+    margin-bottom: 50px
+
+  @media(min-width: 1200px)
+    margin-bottom: 115px
+
+  h3,
+  p
+    @media(min-width: 1200px)
+      margin-bottom: 15px

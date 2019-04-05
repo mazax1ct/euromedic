@@ -12,3 +12,47 @@
   &:hover,
   &:focus
     box-shadow: inset 0px 0px 0px 4px $secondary-color
+
+.licenses-slider
+  display: flex
+  flex-wrap: wrap
+  margin-left: -15px
+  margin-right: -15px
+  margin-bottom: 30px
+
+  &.slick-initialized
+    display: block
+
+    .license,
+    .licenses-slider__slide
+      margin-bottom: 0
+
+  &__slide
+    margin-bottom: 30px
+    padding-left: 15px
+    padding-right: 15px
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      display: flex
+      width: 33.333%
+
+    @media(min-width: 992px)
+      width: 25%
+
+  .slick-track
+    @media(min-width: 768px)
+      display: flex
+
+  .slick-slide
+    height: auto
+
+    & > div
+      @media(min-width: 768px)
+        align-items: center
+        display: flex
+        height: 100%
+
+  .license
+    display: inline-block
