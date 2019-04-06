@@ -5,16 +5,19 @@
   margin-top: -30px
   margin-bottom: 30px
 
-  @media(max-width: 991px)
+  @media(max-width: 767px)
     background-image: none !important
 
   @media(min-width: 768px)
-    height: 575px
+    height: 400px
     margin-top: 30px
     margin-bottom: 70px
 
   @media(min-width: 992px)
     margin-top: 60px
+
+  @media(min-width: 1200px)
+    height: 575px
 
   &__inner
     color: #fff
@@ -22,18 +25,85 @@
     text-align: center
 
     @media(min-width: 768px)
+      height: 400px
+
+    @media(min-width: 1200px)
       height: 575px
 
   &__links
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-left: -15px
+    margin-right: -15px
+    padding-top: 30px
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
 
   &__link-block
-    background: url('../images/vector/hexagon.svg') no-repeat 0 0 transparent
-    height: 292px
-    margin-left: auto
-    margin-right: auto
-    max-width: 260px
-    padding-top: 64px
+    background: url('../images/vector/hexagon.svg') no-repeat 0 0 / 100% 100% transparent
+    height: 146px
+    margin-left: 15px
+    margin-right: 15px
+    margin-bottom: 30px
+    max-width: 130px
+    padding-top: 36px
     text-align: center
+    width: 50%
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      margin-left: 0
+      margin-right: 0
+      position: absolute
+
+    @media(min-width: 1200px)
+      height: 292px
+      max-width: 260px
+      padding-top: 64px
+      width: 260px
+
+    &:first-child
+      @media(min-width: 768px)
+        left: auto
+        right: 200px
+        top: 60px
+
+      @media(min-width: 1200px)
+        right: 276px
+        top: 20px
+
+    &:nth-child(2)
+      @media(min-width: 768px)
+        left: auto
+        right: 50px
+        top: 60px
+
+      @media(min-width: 1200px)
+        right: 0
+        top: 20px
+
+    &:nth-child(3)
+      @media(min-width: 768px)
+        left: auto
+        right: 272px
+        top: 190px
+
+      @media(min-width: 1200px)
+        right: 412px
+        top: 260px
+
+    &:nth-child(4)
+      @media(min-width: 768px)
+        left: auto
+        right: 124px
+        top: 190px
+
+      @media(min-width: 1200px)
+        right: 138px
+        top: 260px
 
   &__link
     border-radius: 20px
@@ -41,35 +111,60 @@
     display: block
     position: relative
 
+    &:hover,
+    &:focus
+      .main-banner__link-image
+        transform: scale(1.1)
+
     &::before,
     &::after
       border-radius: 40px
       content: ''
-      height: 150px
-      left: 44px
+      height: 75px
+      left: 22px
       position: absolute
       transform-origin: center center
       transform: rotate(30deg) skew(-30deg)
-      width: 170px
+      width: 85px
+
+      @media(min-width: 1200px)
+        height: 150px
+        left: 44px
+        width: 170px
 
     &::before
-      top: -58px
+      top: -33px
+
+      @media(min-width: 1200px)
+        top: -58px
 
     &::after
-      left: 46px
-      top: 71px
+      left: 24px
+      top: 32px
+
+      @media(min-width: 1200px)
+        left: 46px
+        top: 71px
 
     &:hover,
     &:focus
       color: $text-color
 
   &__link-image
-    width: 150px
+    transform: scale(1)
+    transition: transform 0.3s
+    width: 75px
+
+    @media(min-width: 1200px)
+      width: 150px
 
   &__link-title
     display: block
-    font-size: 36px
-    line-height: 1
+
+    @media(min-width: 1200px)
+      font-size: 30px
+      line-height: 1
+      margin-top: 15px
 
   &__button
     background: url('../images/vector/flag.svg') no-repeat 0 0 transparent
