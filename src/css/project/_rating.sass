@@ -1,0 +1,80 @@
+.ratings-list
+  @media(min-width: 1200px)
+    margin-right: calc(-4.166666% - 15px)
+    margin-left: calc(-4.166666% - 15px)
+
+.rating
+  border: 1px solid #e8e8e8
+  margin-bottom: 30px
+  margin-left: auto
+  margin-right: auto
+  max-width: 264px
+  padding: 70px 15px 15px
+  position: relative
+
+  @media(min-width: 992px)
+    margin-bottom: 0
+
+  &__logo-block
+    align-items: center
+    display: flex
+    justify-content: flex-end
+    height: 70px
+    left: 0
+    padding-right: 15px
+    padding-left: 15px
+    position: absolute
+    top: 0
+    width: 100%
+
+  &__value
+    color: $secondary-color
+    font-size: 34px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 15px
+
+  &__stars
+    display: flex
+    margin-bottom: 15px
+
+  &__star-block
+    height: 18px
+    margin-right: 4px
+    overflow: hidden
+    position: relative
+    width: 18px
+
+  &__star
+    height: 18px
+    vertical-align: top
+    width: 18px
+
+    &--full
+      fill: $secondary-color
+
+    &--stroke
+      fill: none
+      stroke-width: 1px
+      stroke: $secondary-color
+
+  &__star-overflow
+    background-color: #fff
+    height: 18px
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 1
+
+    & + .rating__star
+      left: 0
+      position: absolute
+      top: 0
+      z-index: 2
+
+  &__reviews
+    line-height: 1
+
+    @media(min-width: 1200px)
+      font-size: 16px

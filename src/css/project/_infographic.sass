@@ -1,0 +1,82 @@
+.infographic
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-left: -15px
+  margin-right: -15px
+  text-align: center
+
+  @media(min-width: 992px)
+    font-size: 14px
+
+  @media(min-width: 1200px)
+    font-size: 16px
+    margin-bottom: 50px
+
+  &__item
+    margin-bottom: 30px
+    padding-left: 15px
+    padding-right: 15px
+    width: 50%
+
+    @media(min-width: 768px)
+      width: 33.333%
+
+    @media(min-width: 992px)
+      width: 20%
+
+  &__image-block
+    align-items: flex-end
+    display: flex
+    justify-content: center
+    height: 100px
+    margin-bottom: 15px
+
+    @media(min-width: 1200px)
+      margin-bottom: 35px
+      margin-top: 45px
+
+.info
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    font-size: 16px
+
+  p
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+  .video__link
+    &:hover,
+    &:focus
+      .video__button
+        border-color: $secondary-color
+
+      .video__svg
+        fill: $secondary-color
+
+  .video__iframe,
+  .video__media
+    border: 4px solid $primary-color
+
+  .video__button
+    border-radius: 50%
+    border: 10px solid $primary-color
+    height: 115px
+    transition: border-color 0.3s
+    width: 115px
+
+    &:focus
+      border-color: $secondary-color
+  
+      .video__svg
+        fill: $secondary-color
+
+  .video__svg
+    fill: $primary-color
+    height: 66px
+    opacity: 1
+    margin-left: 8px
+    width: 56px
