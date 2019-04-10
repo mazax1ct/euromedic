@@ -263,9 +263,11 @@ img
 .info-block2
   border: 2px solid $secondary-color
   border-radius: 20px
+  box-shadow: inset 0px 0px 0px 0px rgba(172,220,108,1)
   color: $secondary-color
   margin-bottom: 40px
   padding: 20px
+  transition: box-shadow 0.3s
   text-align: center
 
   @media(min-width: 768px)
@@ -296,6 +298,9 @@ img
       right: 5px
       top: 5px
       width: 30px
+
+    &:hover
+      box-shadow: inset 0px 0px 0px 2px rgba(172,220,108,1)
 
 .decorated-table-block
   border: 1px solid #d7d7d7
